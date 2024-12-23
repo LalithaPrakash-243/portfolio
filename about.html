@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <style>
+    /* Reset and General Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: rgb(5, 5, 46);
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 80px;
+      background-color: rgb(8, 8, 100);
+      padding: 0 20px;
+    }
+    nav .left {
+      font-size: 1.5em;
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
+    nav ul li {
+      list-style: none;
+      margin: 0 15px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+    }
+    nav ul li a:hover {
+      color: rgb(140, 140, 221);
+    }
+    nav ul li a.active {
+      color: rgb(140, 140, 221);
+      font-weight: bold;
+    }
+
+    .aboutSection {
+      max-width: 80vw;
+      margin: 50px auto;
+      text-align: center;
+    }
+    .aboutSection h1 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+    .aboutContent {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .aboutContent img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      margin-bottom: 20px;
+      border: 3px solid rgb(159, 99, 215);
+    }
+    .aboutContent p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin: 10px 0;
+    }
+    footer {
+      background-color: rgb(25, 8, 41);
+      text-align: center;
+      padding: 20px 0;
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="left">Nirmayi's Portfolio</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="aboutSection">
+      <h1>About Me</h1>
+      <div class="aboutContent">
+        <img src="profile.jpg" alt="">
+        <p>
+          Hello! I'm <span style="color: rgb(159, 99, 215);">Lalitha</span>, a passionate Web Developer and Software Engineer. 
+          I thrive on creating user-friendly, interactive, and visually appealing web applications. 
+          My journey in technology began with curiosity and has evolved into a strong passion for solving real-world problems through coding.
+        </p>
+        <p>
+          When I’m not coding, you’ll find me exploring new technologies, reading books, or working on creative projects. 
+          I believe in continuous learning and collaboration, which have been key drivers of my success.
+        </p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    &copy; 2024 Lalitha's Portfolio | All rights reserved
+  </footer>
+</body>
+</html>
